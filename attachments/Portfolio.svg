@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="29" viewBox="0 0 105 29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #818080;
+        font-size: 24px;
+        font-family: Montserrat-Medium, Montserrat;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <text id="Portfolio" class="cls-1" transform="translate(0 23)"><tspan x="0" y="0">Portfolio</tspan></text>
+</svg>

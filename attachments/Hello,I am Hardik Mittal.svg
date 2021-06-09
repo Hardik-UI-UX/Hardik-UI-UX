@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="646" height="168" viewBox="0 0 646 168">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        font-size: 69px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #6563ff;
+      }
+    </style>
+  </defs>
+  <text id="Hello_I_am_Hardik_Mittal" data-name="Hello,
+I am Hardik Mittal" class="cls-1" transform="translate(0 67)"><tspan x="0" y="0">Hello,</tspan><tspan x="0" y="84">I am</tspan><tspan class="cls-2" y="84"> </tspan><tspan class="cls-3" y="84">Hardik Mittal</tspan></text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="281" height="111" viewBox="0 0 281 111">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6563ff;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 30px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_22);
+      }
+    </style>
+    <filter id="Rectangle_22" x="0" y="0" width="281" height="111" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_84" data-name="Group 84" transform="translate(-174 -702)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 174, 702)">
+      <rect id="Rectangle_22-2" data-name="Rectangle 22" class="cls-1" width="245" height="75" rx="24" transform="translate(18 14)"/>
+    </g>
+    <text id="See_Resume" data-name="See Resume" class="cls-2" transform="translate(217 765)"><tspan x="0" y="0">See Resume</tspan></text>
+  </g>
+</svg>
