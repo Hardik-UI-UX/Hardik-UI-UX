@@ -16,7 +16,8 @@
 .hirebackground {
 	background-image: url('./attachments/hiremeback.png');
 	width: 100%;
-	height: 70vh;
+	/* height: 70vh; */
+	padding: 50px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover !important;
@@ -48,4 +49,18 @@
 .innerfont {
 	font-size: 28px;
 	font-weight: 500;
+}
+
+.form {
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-backdrop-filter: blur(40px);
+  	backdrop-filter: blur(40px);
+	width: max-content;
+	border-radius: 25px;
+}
+
+input {
+	border: none;
+	border-radius: 13px;
+	padding: 8px;
 }
