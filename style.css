@@ -22,10 +22,6 @@
 	background-size: cover !important;
 }
 
-.maintext {
-	font-size: xx-large;
-}
-
 .customBtn {
 	background-color: var(--PRIMARY_COLOR);
 	border: 2px solid var(--PRIMARY_COLOR);
@@ -39,4 +35,17 @@
 
 .aboutme {
 	font-size: x-large;
+}
+
+.mylink {
+	text-decoration: none;
+}
+
+.mainfont {
+	font-size: 50px;
+}
+
+.innerfont {
+	font-size: 28px;
+	font-weight: 500;
 }
