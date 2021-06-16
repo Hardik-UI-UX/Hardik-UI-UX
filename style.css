@@ -28,7 +28,7 @@
 	border: 2px solid var(--PRIMARY_COLOR);
 	border-radius: 24px;
 	width: max-content;
-	padding: 8px;
+	padding: 8px 12px;
 	cursor: pointer;
 	color: white;
 	font-weight: bolder;
