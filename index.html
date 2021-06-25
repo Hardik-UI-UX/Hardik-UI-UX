@@ -13,6 +13,28 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Hardik Mittal</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_FRiqxAjwtOiD28HYKraqj");
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				// generate a five digit number for the contact_number variable
+				this.contact_number.value = Math.random() * 100000 | 0;
+				// these IDs from the previous steps
+				emailjs.sendForm('contact_service', 'contact_form', this)
+					.then(function () {
+						console.log('SUCCESS!');
+					}, function (error) {
+						console.log('FAILED...', error);
+					});
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -35,9 +57,9 @@
 					<li class="nav-item">
 						<a class="nav-link text-center" href="#about">About</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link text-center" href="#skills">Skills</a>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link text-center" href="#portfolio">Portfolio</a>
 					</li>
@@ -139,7 +161,7 @@
 		</div>
 
 		<!-- Skills -->
-		<div class="row mt-5" id="skills">
+		<!-- <div class="row mt-5" id="skills">
 			<h1 class="text-center font-weight-bold">My <span class="headingp">Skills</span></h1>
 			<div class="row flex justify-content-center mt-5">
 				<div class="col-sm-3 text-center mx-2">
@@ -218,15 +240,18 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Portfolio -->
 		<div class="row mt-5" id='portfolio'>
 			<h1 class="text-center font-weight-bold">Port<span class="headingp">folio</span></h1>
 			<div class="row mt-5">
 				<div class="col-sm-8 py-1">
-					<a href="https://blog.prototypr.io/ui-ux-case-study-590938bd2809" target="_blank"
+					<!-- <a href="https://blog.prototypr.io/ui-ux-case-study-590938bd2809" target="_blank"
+						style="text-decoration: none;"> -->
+					<a href="https://www.behance.net/gallery/122246599/Krayik-A-UIUX-Case-Study" target="_blank"
 						style="text-decoration: none;">
+
 						<img class="img-fluid" src="attachments/real_estate.png" alt="real_estate">
 					</a>
 				</div>
@@ -265,15 +290,20 @@
 								Looking forward to work <br> with you
 							</div>
 							<br>
-							<input class="h4" type="text" placeholder="Name">
-							<br>
-							<br>
-							<input class="h4" type="email" placeholder="Email">
-							<br>
-							<br>
-							<input class="h4" type="text" placeholder="Message">
-							<br><br>
-							<button class="customBtn h4 px-5">SEND</button>
+							<form id="contact-form">
+								<input type="hidden" name="contact_number">
+								<input class="h4" id="user_name" name="user_name" type="text" placeholder="Name">
+								<br>
+								<br>
+								<input class="h4" name="user_email" id="user_email" type="email" placeholder="Email">
+								<br>
+								<br>
+								<textarea class="h4" name="message" id="message" type="text"
+									placeholder="Message"></textarea>
+								<br><br>
+								<input class="customBtn h4 px-5" type="submit" value="Send">
+								<!-- <button class="customBtn h4 px-5" onclick="sendMail()">SEND</button> -->
+							</form>
 						</div>
 					</div>
 				</div>
