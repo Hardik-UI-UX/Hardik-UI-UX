@@ -59,7 +59,7 @@
 	border-radius: 25px;
 }
 
-input {
+textarea,input {
 	border: none;
 	border-radius: 13px;
 	padding: 8px;
